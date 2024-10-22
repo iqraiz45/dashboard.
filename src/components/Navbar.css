@@ -1,0 +1,38 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    padding: 10px 20px;          /* Padding for the navbar */
+    background-color: white;   /* Light gray background */
+    width: 100%;                 /* Full width */
+  }
+  
+  /* Individual navbar items */
+  .navbar-item {
+    display: flex;
+    align-items: center;         /* Align icon and text vertically */
+    padding: 10px 25px;          /* Padding for space between items */
+    cursor: pointer;             /* Change cursor on hover */
+    font-size: 18px;             /* Text size */
+    color: black;                /* Default text color */
+    transition: 0.3s ease, color 0.3s ease; /* Smooth transition */
+    border: none;                /* Remove borders */
+  }
+  
+  /* Styling for icons inside navbar items */
+  .navbar-item .icon {
+    margin-right: 8px;           /* Space between the icon and text */
+  }
+  
+  /* Hover effect with solid blue background */
+  .navbar-item:hover {
+    background-color: #5A57FF;   /* Solid blue background */
+    color: white;            /* Change text color to white on hover */
+    
+  }
+  
+  /* Change icon color to white on hover */
+  .navbar-item:hover .icon {
+    color: white;
+  }
+  

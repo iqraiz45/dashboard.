@@ -1,0 +1,164 @@
+.outer-box {
+  border: 1px solid #ccc;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(33.33% - 20px); /* Ensures 3 boxes per row with gap */
+  margin-bottom: 20px; /* Space below each box */
+}
+
+
+.outer-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.add-box-btn {
+  background-color: #5A57FF;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.outer-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.outer-box-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.power-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 70px;
+  border-radius: 10%;
+}
+.power-info:hover{
+  color:#FF5789;
+  background-color: #C2C0FF;
+}
+
+
+
+.row div {
+  font-size: 16px;
+}
+
+.outer-box-parameters {
+  margin-top: 16px;
+}
+
+.parameter-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.voltage-current-readings {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.voltage-readings,
+.current-readings {
+  background-color:#C2C0FF;
+  padding: 16px;
+  border-radius: 8px;
+  flex: 1;
+  margin-top: 10px;
+}
+
+.voltage-readings div,
+.current-readings div {
+  margin-bottom: 8px;
+  
+}
+
+.inner-box {
+  border: 1px solid white;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+  border:2px solid #FF5789;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inner-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.inner-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inner-box-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inner-box-parameters {
+  margin-top: 16px;
+  
+}
+
+.inner-box .parameter-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.inner-box .voltage-current-readings {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.inner-box .voltage-readings,
+.inner-box .current-readings {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  flex: 1;
+  background-color: #C2C0FF;
+}
+
+.inner-box .voltage-readings div,
+.inner-box .current-readings div {
+  margin-bottom: 8px;
+  
+}
+
+.hell{
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  
+}

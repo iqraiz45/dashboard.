@@ -1,0 +1,23 @@
+.boxes-section {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 20px; /* Space between rows */
+  padding: 20px;
+}
+
+.box-row {
+  display: flex; /* Use flexbox for the rows */
+  justify-content: space-between; /* Distribute boxes evenly */
+  gap: 20px; /* Space between boxes */
+}
+
+/* Ensure each outer box fills the space evenly */
+.outer-box {
+  flex: 1; /* Allow boxes to grow and fill the space equally */
+  min-width: 0; /* Prevent overflow and ensure boxes fit within their container */
+}
+
+/* Optional: Set a minimum width for better appearance */
+.outer-box {
+  min-width: 100px; /* Set a minimum width for the boxes */
+}

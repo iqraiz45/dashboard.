@@ -1,0 +1,73 @@
+.outer-box,
+.inner-box {
+  border: 1px solid white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.outer-box-header,
+.inner-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-box-btn {
+  background: none;
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.outer-box-content,
+.inner-box-content {
+  margin-top: 15px;
+}
+
+.outer-box-info,
+.inner-box-info {
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.outer-box-parameters,
+.inner-box-parameters {
+  margin-top: 15px;
+}
+
+.parameter-title {
+  font-weight: bold;
+}
+
+.voltage-current-readings {
+  display: flex;
+  justify-content: space-between;
+}
+
+.voltage-readings {
+  flex: 1;
+  position: relative;
+}
+
+.current-readings {
+  flex: 1;
+}
+
+.colored-line {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #007bff; /* Adjust the color as needed */
+}
+

@@ -1,0 +1,69 @@
+.sidebar {
+  background-color: white; /* Sidebar background color */
+  transition: width 0.3s; /* Smooth transition for width change */
+  height: 100%; /* Full height */
+  position: fixed; /* Fixed positioning for the sidebar */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.sidebar.closed {
+  width: 60px; /* Width when closed */
+}
+
+.sidebar.open {
+  width: 250px; /* Width when open */
+}
+
+.logo {
+  padding: 20px; /* Space for logo */
+  text-align: left; /* Align logo to the left */
+  margin-left: 10px; /* Left margin for logo */
+  color: rgb(183, 124, 238);
+}
+
+.toggle-icon {
+  cursor: pointer;
+  padding: 10px;
+  position: absolute; /* Position the toggle icon absolutely */
+  right: 10px; /* Right margin for the toggle icon */
+  top: 20px; /* Align with the top of the sidebar */
+  color: black; /* Cross icon color */
+}
+
+.sidebar-headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  padding: 10px;
+  margin: 10px 0; /* Gap between headings */
+  display: flex; /* Align icons and text */
+  align-items: center; /* Center vertically */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and color change */
+}
+
+/* Individual icon colors */
+.icon {
+  margin-right: 10px; /* Space between icon and text */
+  color: #000; /* Default color for icons */
+  transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Colorful icons */
+.heading:nth-child(1) .icon { color: green; }   /* Dashboard */
+.heading:nth-child(2) .icon { color: orange; }  /* Analysis */
+.heading:nth-child(3) .icon { color: purple; }  /* Alarm Setup */
+.heading:nth-child(4) .icon { color: teal; }     /* Report Generation */
+.heading:nth-child(5) .icon { color: pink; }     /* M&V */
+.heading:nth-child(6) .icon { color: brown; }    /* KPI */
+.heading:nth-child(7) .icon { color: gold; }     /* Support */
+.heading:nth-child(8) .icon { color: pink; }     /* Sign Out */
+
+.heading:hover {
+  background-color:  #5A57FF  ; /* Background color change on hover */
+  color: white; /* Change text color on hover */
+  border-radius: 5px; /* Rounded corners */
+}
